@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns:concordion="http://www.concordion.org/2007/concordion">
+<head>
+	<link href="../concordion.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<h1>Epic : User Management</h1>
+	<h2>User Story : ユーザを新規登録する</h2>
+	<p>
+		未登録のユーザとして、<br/>
+		ユーザ登録ができる。<br/>
+		なぜなら、登録することで様々なサービスを提供できるから。
+	</p>
+
+	<h3>Acceptance Test</h3>	
+	<p>
+		まだユーザ登録していない利用ユーザである
+		名前：<b concordion:set="#name">Dai</b>、
+		年齢：<b concordion:set="#age">24</b>を使って、<br/>
+		ユーザ登録すると<b concordion:assertEquals="registUser(#name, #age)">true</b>が返ってくる。
+	</p>
+</body>
+</html>
